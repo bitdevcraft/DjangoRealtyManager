@@ -18,6 +18,10 @@ class MilestoneInline(nested_admin.NestedTabularInline):
     extra = 0
     verbose_name = 'Milestone'
     verbose_name_plural = 'Milestones'
+    fields = ['name', 'order', 'total_percent', 'percent', 'remarks' ]
+    readonly_fields = ['percent']
+
+    ordering =["order"]
 
 class PaymentPlanAdmin(nested_admin.NestedModelAdmin):
     inlines = [MilestoneInline, ]
