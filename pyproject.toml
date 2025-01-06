@@ -1,0 +1,10 @@
+[project]
+name = "djangorealtymanager"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "django>=5.1.4",
+    "django-nested-admin>=4.1.1",
+]

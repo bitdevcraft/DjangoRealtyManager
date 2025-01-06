@@ -1,5 +1,6 @@
 # Installed Packages
 ```
-pip install django==4.2
-pip install django-nested-admin
+pip install uv
+uv venv
+uv sync
 ```
